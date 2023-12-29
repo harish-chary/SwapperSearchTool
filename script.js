@@ -17,6 +17,9 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         searchEngineElement.innerHTML = searchEngine;
         if(searchTextElement){
             searchTextElement.value = getSearchTermFromUrl(currentUrl,searchEngine);
+            if(searchEngineElement.value == "Query not found"){
+                searchEngineElement.value = "";
+            }
         }
     }
 });

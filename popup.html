@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="width:400px">
+<html lang="en" style="width:300px">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,20 @@
     <div class="container">
         <h1>Swapper Extension</h1>
         <label for="searchText" class="label">Search Text:</label>
-        <input type="text" id="searchText" name="searchText" placeholder="Enter your search text">
+        <input type="text" id="searchText" name="searchText" placeholder="Enter your search text" class="input">
         <p id="searchEngine" class="hidden">Search Engine: <span id="searchEngineName"></span></p>
         <p id="searchDataElement" class="hidden">Search Data: <span id="searchData"></span></p>
         <br>
-        <button id="google" class="search-button"> Google</button>
-        <button id="duckDuckGo" class="search-button">DuckDuckGo</button>
-        <button id="yahoo" class="search-button">Yahoo</button>
-        <button id="bing" class="search-button">Bing</button>
+        <div class="button-row">
+        <button id="google" class="small-square-button">
+            <img src="google_logo.png" alt="Google Logo" ></button>
+        <button id="duckDuckGo" class="small-square-button">
+            <img src="duckduckgo_logo.png" alt="DuckDuckGo logo" ></button>
+        <button id="yahoo" class="small-square-button">
+            <img src="yahoo_logo.png" alt="Yahoo logo" ></button>
+        <button id="bing" class="small-square-button">
+            <img src="bing_logo.png" alt="Bing Logo" ></button>
+        </div>
     </div>
 
     <script src="script.js"></script>
